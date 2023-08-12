@@ -1,0 +1,15 @@
+{
+  "name": "video-ambilight",
+  "version": "1.0.0",
+  "description": "🌈 Ambilight Effect - React - Next.js (YouTube iframe, Video).",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css -m",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "DKSHS",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
