@@ -47,7 +47,7 @@ jobs:
       - name: Move static files to _site/
         run: |
           mkdir _site/
-          mv assets index.html dist _site/
+          mv assets index.html youtube dist _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
