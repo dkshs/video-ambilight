@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>🌈 Ambilight Effect - YouTube Player API</title>
+  </head>
+  <body
+    class="w-screen h-screen bg-black overflow-hidden flex items-center justify-center"
+  >
+    <div class="w-full max-w-[720px] mx-auto flex justify-center items-center">
+      <div class="w-full h-full relative">
+        <div
+          id="ambilight"
+          class="blur-[80px] opacity-50 saturate-[300%] left-0 pointer-events-none absolute top-0 scale-[1.2] translate-x-0 translate-y-0 w-full -z-[1] h-full shadow-[0px_0px_80px_rgba(0,0,0,0)]"
+        ></div>
+        <div id="video" class="w-full h-full rounded-lg aspect-video"></div>
+      </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
