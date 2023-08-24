@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i ./styles/input.css -o ./dist/output.css -m",
-    "dev": "tailwindcss -i ./styles/input.css -o ./dist/output.css --watch",
-    "clean": "rm -fr node_modules"
+    "dev": "tailwindcss -i ./styles/input.css -o ./dist/output.css --watch"
   },
   "author": "DKSHS",
   "license": "MIT",
