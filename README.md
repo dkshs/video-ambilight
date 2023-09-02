@@ -8,6 +8,6 @@
 
 ### Demo
 
-[YouTube iframe (HTML + JS)](https://shadowss01.github.io/video-ambilight/youtube/index.html)
+[YouTube iframe (HTML + JS)](https://dkshs.github.io/video-ambilight/youtube/index.html)
 
 [YouTube Player API + Next.js (React)](https://video-ambilightt.vercel.app/)
