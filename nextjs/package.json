@@ -10,7 +10,7 @@
     "lint:fix": "eslint --fix . && prettier . -w"
   },
   "dependencies": {
-    "next": "14.1.2",
+    "next": "14.1.3",
     "react": "^18",
     "react-dom": "^18",
     "react-player": "^2.15.1"
