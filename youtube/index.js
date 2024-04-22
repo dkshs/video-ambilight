@@ -1,6 +1,6 @@
 let video;
 let ambilight;
-let videoId = "_OmLYckdMvI";
+const videoId = "_OmLYckdMvI";
 
 function onYouTubeIframeAPIReady() {
   video = new YT.Player("video", {
@@ -38,11 +38,11 @@ function videoStateChange(event) {
 }
 
 function optimizeAmbilight(event) {
-  let qualityLevels = event.target.getAvailableQualityLevels();
+  const qualityLevels = event.target.getAvailableQualityLevels();
   event.target.mute();
-  if (qualityLevels && qualityLevels.length && qualityLevels.length > 0) {
+  if (qualityLevels && qualityLevels?.length > 0) {
     qualityLevels.reverse();
-    let lowestLevel =
+    const lowestLevel =
       qualityLevels[qualityLevels.findIndex((q) => q !== "auto")];
     event.target.setPlaybackQuality(lowestLevel);
   }
