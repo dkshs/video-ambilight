@@ -31,8 +31,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
-        with:
-          version: 8
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -40,8 +38,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
           cache: "pnpm"
+          node-version: 18
 
       - name: Install dependencies
         run: pnpm install

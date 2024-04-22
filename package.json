@@ -1,5 +1,6 @@
 {
   "name": "video-ambilight",
+  "packageManager": "pnpm@9.0.5",
   "version": "1.0.0",
   "description": "🌈 Ambilight Effect - React - Next.js (YouTube iframe, Video).",
   "main": "index.js",
