@@ -1,3 +1,0 @@
-{
-  "extends": ["@dkshs/eslint-config/react", "next/core-web-vitals"]
-}

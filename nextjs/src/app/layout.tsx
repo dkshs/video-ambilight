@@ -1,6 +1,6 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import "./globals.css";
 
 import { Inter } from "next/font/google";
 
@@ -11,7 +11,11 @@ export const metadata: Metadata = {
   description: "Ambilight effect using YouTube iframe Player API with Next.js.",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  readonly children: ReactNode;
+}) {
   return (
     <html lang="en">
       <body

@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import ReactPlayer from "react-player/youtube";
 
 export type VideoAmbilightProps = {
-  videoId: string;
+  readonly videoId: string;
 };
 
 export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
@@ -15,11 +15,10 @@ export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
   const videoRef = useRef<ReactPlayer>(null);
   const ambilightVideoRef = useRef<ReactPlayer>(null);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const optimizeAmbilight = useCallback((player?: Record<string, any>) => {
     if (!player || !player.getAvailableQualityLevels) return;
     const qualityLevels: string[] = [...player.getAvailableQualityLevels()];
-    if (qualityLevels && qualityLevels.length && qualityLevels.length > 0) {
+    if (qualityLevels && qualityLevels.length > 0 && qualityLevels.length > 0) {
       qualityLevels.reverse();
       const lowestLevel =
         qualityLevels[qualityLevels.findIndex((q) => q !== "auto")];
@@ -35,8 +34,8 @@ export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
   }, [optimizeAmbilight, videoCurrentTime]);
 
   return (
-    <div className="relative flex h-full w-full justify-center">
-      <div id="video" className="aspect-video h-full w-full rounded-lg">
+    <div className="relative flex size-full justify-center">
+      <div id="video" className="aspect-video size-full rounded-lg">
         <ReactPlayer
           ref={videoRef}
           url={`https://www.youtube.com/watch?v=${videoId}`}
@@ -55,7 +54,7 @@ export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
       </div>
       <div
         id="ambilight-video"
-        className="pointer-events-none absolute left-0 top-0 -z-[1] h-full w-full shadow-[0_0_120px_rgba(0,0,0,0)] blur-[80px] saturate-[300%]"
+        className="pointer-events-none absolute left-0 top-0 z-[-1] size-full shadow-[0_0_120px_rgba(0,0,0,0)] blur-[80px] saturate-[300%]"
       >
         <ReactPlayer
           url={`https://www.youtube.com/watch?v=${videoId}`}
