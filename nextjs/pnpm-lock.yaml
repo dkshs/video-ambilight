@@ -22,8 +22,8 @@ importers:
         version: 2.16.0(react@18.3.1)
     devDependencies:
       '@dkshs/eslint-config':
-        specifier: 2.8.0
-        version: 2.8.0(@types/eslint@8.56.11)(eslint@9.8.0)(tailwindcss@3.4.7)(typescript@5.5.4)
+        specifier: 2.8.1
+        version: 2.8.1(@types/eslint@8.56.11)(eslint@9.8.0)(tailwindcss@3.4.7)(typescript@5.5.4)
       '@types/node':
         specifier: ^20.14.13
         version: 20.14.13
@@ -70,8 +70,8 @@ packages:
     resolution: {integrity: sha512-EStJpq4OuY8xYfhGVXngigBJRWxftKX9ksiGDnmlY3o7B/V7KIAc9X4oiK87uPJSc/vs5L869bem5fhZa8caZw==}
     engines: {node: '>=6.9.0'}
 
-  '@dkshs/eslint-config@2.8.0':
-    resolution: {integrity: sha512-wNW7YYxhmhEyZP7BNlROQP3hQ+T0JyiOl7jVy0jeKi4bGCAvcEymgkcU3dQgyc6Pa0ozeC8of7bkswErAaSVeQ==}
+  '@dkshs/eslint-config@2.8.1':
+    resolution: {integrity: sha512-l0Sv+EnmSg8FDoKs9xqKaIPAKuwLmLI9UFRqxKkcaQ/XZX35UrOtElrqaHwv5tY1zS4/KlO7siFf21n8Yd1O5g==}
     peerDependencies:
       eslint: '>=8.40.0'
 
@@ -2021,7 +2021,7 @@ snapshots:
       js-tokens: 4.0.0
       picocolors: 1.0.1
 
-  '@dkshs/eslint-config@2.8.0(@types/eslint@8.56.11)(eslint@9.8.0)(tailwindcss@3.4.7)(typescript@5.5.4)':
+  '@dkshs/eslint-config@2.8.1(@types/eslint@8.56.11)(eslint@9.8.0)(tailwindcss@3.4.7)(typescript@5.5.4)':
     dependencies:
       '@next/eslint-plugin-next': 14.3.0-canary.87
       eslint: 9.8.0
