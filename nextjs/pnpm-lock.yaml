@@ -25,8 +25,8 @@ importers:
         specifier: 3.1.2
         version: 3.1.2(@types/eslint@8.56.12)(@typescript-eslint/eslint-plugin@8.6.0(@typescript-eslint/parser@8.6.0(eslint@9.11.1(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.1(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.1(jiti@1.21.6))(tailwindcss@3.4.13)(typescript@5.6.2)
       '@types/node':
-        specifier: ^22.6.1
-        version: 22.6.1
+        specifier: ^22.7.0
+        version: 22.7.0
       '@types/react':
         specifier: ^18.3.9
         version: 18.3.9
@@ -267,8 +267,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@22.6.1':
-    resolution: {integrity: sha512-V48tCfcKb/e6cVUigLAaJDAILdMP0fUW6BidkPK4GpGjXcfbnoHasCZDwz3N3yVt5we2RHm4XTQCpv0KJz9zqw==}
+  '@types/node@22.7.0':
+    resolution: {integrity: sha512-MOdOibwBs6KW1vfqz2uKMlxq5xAfAZ98SZjO8e3XnAbFnTJtAspqhWk7hrdSAs9/Y14ZWMiy7/MxMUzAOadYEw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2337,7 +2337,7 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@22.6.1':
+  '@types/node@22.7.0':
     dependencies:
       undici-types: 6.19.8
 
