@@ -10,4 +10,4 @@
 
 [YouTube iframe (HTML + JS)](https://dkshs.github.io/video-ambilight/youtube/index.html)
 
-[YouTube Player API + Next.js (React)](https://video-ambilightt.vercel.app/)
+[YouTube Player API + Next.js (React)](https://demo-ambilight.vercel.app/)
